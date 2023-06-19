@@ -1,56 +1,60 @@
-:root{
-  --white:#ffff;
+:root {
+  --white: #ffff;
   --yellow: yellow;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* universal formatting */
-li{
+li {
   list-style-type: none;
 }
 
-
-a{
+a {
   color: var(--white);
   font-size: 1.2rem;
   text-decoration: none;
 }
-.active{
+
+.active {
   text-decoration: underline;
   color: var(--yellow);
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding-inline: 10px;
 }
-header{
+
+header {
   height: 80px;
   background-color: red;
 }
-.d-flex-space{
+
+.d-flex-space {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav{
+
+nav {
   height: 100%;
   padding: 10px 0;
 }
 
-.logo-img{
+.logo-img {
   width: 70px;
 }
 
-.g-10{
+.g-10 {
   gap: 10px;
 }
 
-.logo-title{
-  color:var(--white)
+.logo-title {
+  color: var(--white);
 }

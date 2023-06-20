@@ -55,6 +55,9 @@ nav {
 .g-10 {
   gap: 10px;
 }
+.logo{
+width: 200px;
+}
 
 .logo-title {
   color: var(--white);

@@ -1,0 +1,60 @@
+.profile-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin-bottom: 60px;
+}
+
+.mission-list {
+  border: 1px solid hsl(180, 87%, 34%);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.user-missions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-missions li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border-bottom: 1px solid hsl(180, 87%, 34%);
+  padding: 20px;
+}
+
+.action-btns .leave-mission-btn {
+  background-color: #f00;
+  color: #fff;
+  border: 1px solid #f00;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btns .read-more-btn,
+.action-btns .join-btn {
+  background-color: transparent;
+  border: 1px solid #6c757e;
+  padding: 5px;
+  border-radius: 5px;
+  color: #6c757e;
+  cursor: pointer;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.mission-name {
+  grid-column: 1 / span 1;
+}

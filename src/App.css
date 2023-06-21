@@ -76,11 +76,16 @@ nav {
   cursor: pointer;
   font-family: inherit;
   color: var(--white);
+  font-size: 1.2rem;
 }
 
 .rocket-reserve {
   background-color: var(--red);
-  font-size: 1.2rem;
+}
+
+.rocket-unreserve {
+  background-color: gray;
+  color: black;
 }
 
 .rocket-name {

@@ -26,6 +26,7 @@ const Rockets = () => {
             img={rocket.flickr_images}
             id={rocket.id}
             desc={rocket.description}
+            reserved={rocket.reserved}
           />
         ))
       ) : null}

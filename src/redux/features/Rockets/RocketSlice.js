@@ -7,7 +7,14 @@ const initialState = {
   error: '',
 };
 const url = 'https://api.spacexdata.com/v4/rockets';
-export const fetchRockets = createAsyncThunk('rocket/fetchrockets', () => axios.get(url).then((res) => res.data));
+export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
+  try {
+    const response = await axios(url);
+    return response.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('something went wrong!');
+  }
+});
 
 const RocketSlice = createSlice({
   name: 'rocket',

@@ -2,7 +2,7 @@
   --white: #ffff;
   --yellow: yellow;
   --red: red;
-  --black: black;
+  --black: rgba(0, 0, 0, 0.937);
 }
 
 * {

@@ -7,11 +7,34 @@ const initialState = {
   error: '',
 };
 const url = 'https://api.spacexdata.com/v4/rockets';
-export const fetchRockets = createAsyncThunk('rocket/fetchrockets', () => axios.get(url).then((res) => res.data));
+export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
+  try {
+    const response = await axios(url);
+    return response.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('something went wrong!');
+  }
+});
 
 const RocketSlice = createSlice({
   name: 'rocket',
   initialState,
+  reducers: {
+    reserveRocket: (state, { payload }) => ({
+      ...state,
+      rocket: state.rocket.map((rocket) => {
+        if (payload.id !== rocket.id) return rocket;
+        return { ...rocket, reserved: true };
+      }),
+    }),
+    cancelReserveRocket: (state, { payload }) => ({
+      ...state,
+      rocket: state.rocket.map((rocket) => {
+        if (payload.id !== rocket.id) return rocket;
+        return { ...rocket, reserved: false };
+      }),
+    }),
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchRockets.pending, (state) => ({
       ...state, loading: true,
@@ -19,7 +42,7 @@ const RocketSlice = createSlice({
     builder.addCase(fetchRockets.fulfilled, (state, action) => ({
       ...state,
       loading: false,
-      rocket: action.payload,
+      rocket: action.payload.map((rocket) => ({ ...rocket, reserved: false })),
       error: '',
     }));
 
@@ -31,5 +54,5 @@ const RocketSlice = createSlice({
     }));
   },
 });
-
+export const { reserveRocket, cancelReserveRocket } = RocketSlice.actions;
 export default RocketSlice.reducer;

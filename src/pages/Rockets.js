@@ -7,7 +7,7 @@ import Rocket from '../components/Rocket';
 const Rockets = () => {
   const rockets = useSelector(selectRockets);
   const dispatch = useDispatch();
-  const lengthRock = rockets.rocket.length;
+  const lengthRock=rockets.rocket.length;
   useEffect(() => {
     if (lengthRock > 0) return;
     dispatch(fetchRockets());

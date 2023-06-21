@@ -1,6 +1,7 @@
 :root {
   --white: #ffff;
   --yellow: yellow;
+  --red: red;
 }
 
 * {
@@ -33,7 +34,7 @@ a {
 
 header {
   height: 80px;
-  background-color: red;
+  background-color: var(--red);
 }
 
 .d-flex-space {
@@ -55,6 +56,33 @@ nav {
   gap: 10px;
 }
 
+.logo {
+  width: 200px;
+}
+
 .logo-title {
   color: var(--white);
+}
+
+.my-20 {
+  margin-block: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  margin-block: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--white);
+}
+
+.rocket-reserve {
+  background-color: var(--red);
+  font-size: 1.2rem;
+}
+
+.rocket-name {
+  margin-block: 10px;
 }

@@ -7,10 +7,11 @@ import Rocket from '../components/Rocket';
 const Rockets = () => {
   const rockets = useSelector(selectRockets);
   const dispatch = useDispatch();
+  const lengthRock = rockets.rocket.length;
   useEffect(() => {
-    if (rockets.rocket.length > 0) return;
+    if (lengthRock > 0) return;
     dispatch(fetchRockets());
-  }, [dispatch, rockets.rocket.length]);
+  }, [dispatch, lengthRock]);
   return (
     <div className="container">
       {rockets.loading && <div>loading</div>}

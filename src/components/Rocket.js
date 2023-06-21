@@ -19,7 +19,11 @@ const Rocket = (rockets) => {
       <img src={img} className="logo" alt="rocket" />
       <div className="rocket-details">
         <h2 className="rocket-name">{name}</h2>
-        <p className="rocket-desc">{desc}</p>
+        <p className="rocket-desc">
+          {' '}
+          {reserved === true && <span className="btn reserved">Reserved</span>}
+          {desc}
+        </p>
         <button onClick={(e) => { handleClick(e, id); }} className={reserved === true ? 'rocket-unreserve btn' : 'rocket-reserve btn'} type="button">{reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
       </div>
     </div>

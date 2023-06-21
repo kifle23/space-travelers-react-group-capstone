@@ -7,4 +7,6 @@ const store = configureStore({
   },
 });
 
+const selectRockets = (store) => store.rockets;
+export { selectRockets };
 export default store;

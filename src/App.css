@@ -2,6 +2,7 @@
   --white: #ffff;
   --yellow: yellow;
   --red: red;
+  --black: black;
 }
 
 * {
@@ -85,9 +86,15 @@ nav {
 
 .rocket-unreserve {
   background-color: gray;
-  color: black;
+  color: var(--black);
 }
 
 .rocket-name {
   margin-block: 10px;
+}
+
+.reserved {
+  background-color: var(--yellow);
+  display: inline-block;
+  color: var(--black);
 }

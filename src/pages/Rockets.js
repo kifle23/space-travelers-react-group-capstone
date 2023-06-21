@@ -6,7 +6,7 @@ import { fetchRockets } from '../redux/features/Rockets/RocketSlice';
 const Rockets = () => {
   const rockets = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
-  const lengthRock = rockets.rocket.length;
+  const lengthRock = rockets.length;
   useEffect(() => {
     if (lengthRock > 0) return;
     dispatch(fetchRockets());

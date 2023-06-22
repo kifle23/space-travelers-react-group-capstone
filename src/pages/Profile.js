@@ -7,7 +7,6 @@ import {
 } from '../redux/missionSlice';
 import Profiles from '../components/profile/Profile';
 import './Profile.css';
-import ProfileRocket from '../components/ProfileRocket';
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -23,9 +22,8 @@ const Profile = () => {
   });
   return (
     <>
-      <div className="grid-center container">
+      <div className="profile-section">
         <Profiles missions={reservedMissions} />
-        <ProfileRocket />
       </div>
     </>
   );

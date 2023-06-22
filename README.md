@@ -71,7 +71,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd Space Travelers Hub
+  cd Space-Travelers-Hub
   npm install
 ```
 
@@ -105,12 +105,11 @@ npm test
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/foga-amos-2b5371103/)
 
-
 👤 **Kifle Haile**
 
-- GitHub: [@kifle23](https://github.com/kifle23)
-- Twitter: [@kifle12](https://twitter.com/KifleHaile12)
-- LinkedIn: [Kifle](https://www.linkedin.com/in/kifle-haile)
+- GitHub: [@githubhandle](https://github.com/kifle23)
+- Twitter: [@twitterhandle](https://twitter.com/KifleHaile12)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kifle-haile)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

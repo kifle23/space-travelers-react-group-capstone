@@ -5,7 +5,7 @@ const ProfileRocket = () => {
   const filteredRockets = rockets.rocket.filter((rocket) => rocket.reserved);
   return (
     <div className="rocket-booked">
-      <h2>Reserved Rockets</h2>
+      <h2>My Rockets</h2>
       <ul>
         {filteredRockets.map((rocket) => (
           <li key={rocket.id} className="py single-reserve">{rocket.name}</li>

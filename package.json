@@ -2,6 +2,11 @@
   "name": "space-travelers-react-group-capstone",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/axios"
+    }
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +19,7 @@
     "react-redux": "^8.1.0",
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
     "redux-logger": "^3.0.6",
     "web-vitals": "^2.1.4"
   },

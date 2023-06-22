@@ -1,7 +1,8 @@
 :root {
   --white: #ffff;
   --yellow: yellow;
-  --red: red;
+  --red: rgb(84, 9, 9);
+  --black: rgba(0, 0, 0, 0.937);
 }
 
 * {
@@ -10,7 +11,6 @@
   box-sizing: border-box;
 }
 
-/* universal formatting */
 li {
   list-style-type: none;
 }
@@ -85,9 +85,15 @@ nav {
 
 .rocket-unreserve {
   background-color: gray;
-  color: black;
+  color: var(--black);
 }
 
 .rocket-name {
   margin-block: 10px;
+}
+
+.reserved {
+  background-color: var(--yellow);
+  display: inline-block;
+  color: var(--black);
 }

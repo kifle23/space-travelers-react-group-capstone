@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if my_profile renderers correctly 1`] = `
+<div
+  className="profile-content"
+>
+  <div
+    className="missions"
+  >
+    <h1>
+      Missions
+    </h1>
+    <div
+      className="mission-list"
+    >
+      <p>
+        No Mission Joined
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -97,3 +97,23 @@ nav {
   display: inline-block;
   color: var(--black);
 }
+
+.grid-center {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;
+}
+
+.rocket-booked {
+  padding: 10px;
+}
+
+.py {
+  padding: 10px;
+}
+
+.single-reserve {
+  font-size: 1.2rem;
+  border: 1px solid var(--black);
+  margin-block: 10px;
+}
